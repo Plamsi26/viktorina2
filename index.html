@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <title>Викторина: Тела и Вещества</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <!-- Горен ляв ъгъл: изображение на Знайко -->
+        <div id="header">
+            <img src="znayko.png" alt="Знайко - момче с очила и книга" id="znayko-image">
+            <div id="score-box">Точки: <span id="score">0</span></div>
+        </div>
+        
+        <!-- Поле за въпроса и отговорите -->
+        <div id="question-box">
+            <p id="question-text"></p>
+            <div id="answer-options">
+                <button class="answer-btn" onclick="selectAnswer(0)">Отговор 1</button>
+                <button class="answer-btn" onclick="selectAnswer(1)">Отговор 2</button>
+                <button class="answer-btn" onclick="selectAnswer(2)">Отговор 3</button>
+            </div>
+        </div>
+        
+        <!-- Бутон за следващ въпрос или край на играта -->
+        <div id="next-button-container">
+            <button id="next-button" onclick="nextQuestion()">Следващ въпрос</button>
+        </div>
+        
+        <!-- Крайно съобщение -->
+        <div id="end-message" style="display: none;">
+            <p id="final-score-message"></p>
+            <img id="emoji" src="" alt="емоционален емотикон">
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
